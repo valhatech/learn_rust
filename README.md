@@ -56,6 +56,22 @@ if x < 10 {
 }
 
 ```
+
+# match
+
+```rust
+let day = 3;
+let day_name = match day {
+	1 => {
+		println!("First day of the week!");
+		"Monday"
+	},
+	2 | 3 | 4 | 5 => "Weekday",
+	// ... autres cas
+	_ => "Invalid day",
+};
+```
+
 # loop
 
 ```rust
