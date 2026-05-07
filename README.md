@@ -53,6 +53,7 @@ let mut my_var = String::new();
 // Lit l'entrée
 io::stdin().read_line(&mut my_var).unwrap();
 // Parser une valeur pour la stocker en entier
+// Le .trim permet de supprimer le \n de l'appuie sur entree
 let age: i32 = input.trim().parse().unwrap();
 ```
 
