@@ -42,6 +42,20 @@ let string2: String = String::from("hello");
 let string3 = "hello".to_owned();
 ```
 
+## Entrée/Sortie
+
+```rust
+// Import pour utiliser la bibliothèque io
+use std::io;
+// [...]
+// Crée une chaîne vide pour stocker l'entrée
+let mut my_var = String::new();
+// Lit l'entrée
+io::stdin().read_line(&mut my_var).unwrap();
+// Parser une valeur pour la stocker en entier
+let age: i32 = input.trim().parse().unwrap();
+```
+
 # Control et boucle
 
 # if
