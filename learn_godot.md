@@ -44,3 +44,8 @@ opt-level = 0
 [profile.release]
 opt-level = 3
 ```
+
+Si vous avez l'erreur [Une stratégie de contrôle d’application a bloqué ce fichier. (os error 4551)]
+https://youtu.be/XJJeG69V3kI?si=gEt1o4H-D1RJ2bfJ
+
+
