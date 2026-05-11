@@ -40,6 +40,10 @@ let str1 = "hello";
 let string1: String = "hello".to_string();
 let string2: String = String::from("hello");
 let string3 = "hello".to_owned();
+
+// Afficher une valeur flottante avec deux décimales : This is rounded: 1.56
+println!("This is rounded: {:.2}", num);
+
 ```
 
 ## Entrée/Sortie
