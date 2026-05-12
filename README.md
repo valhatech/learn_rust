@@ -147,6 +147,21 @@ loop{
 	println!("{} is divisible by 3", x);
 }
 ```
+
+```rust
+'outer: for i in 1..=3 {
+    'inner: for j in 1..=3 {
+        if i * j > 5 {
+            break 'outer; // Cela interrompra la boucle externe
+        }else if i == j {
+            continue 'outer; // Cela continuera la boucle externe
+        }
+		println!("({}, {})", i, j);	
+    }
+}
+```
+
+
 # while
 
 ```rust
