@@ -211,6 +211,12 @@ fn function_name() -> i32 {
 }
 //[...]
 let number: i32 = function_name();
+
+fn get_coordinates() -> (i32, i32) {
+    let x = 10;
+    let y = 20;
+    (x, y) // Retourne un tuple
+}
 ```
 
 ```rust
