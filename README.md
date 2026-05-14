@@ -205,6 +205,12 @@ fn divisible_by_three_between(min: i32, max_exclusive: i32) {
 fn square_num(n: i32) -> i32 {
 	n * n // La derniere instruction sera retourne par la methode
 }
+
+fn function_name() -> i32 {
+	return 100;
+}
+//[...]
+let number: i32 = function_name();
 ```
 
 ```rust
