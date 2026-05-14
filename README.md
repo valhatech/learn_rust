@@ -1,6 +1,7 @@
 # learn_rust
 
-[[_TOC_]]
+https://rustlings.rust-lang.org/
+https://github.com/rust-lang/rustlings
 
 # Variable
 
