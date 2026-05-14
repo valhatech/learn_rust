@@ -219,6 +219,15 @@ fn get_coordinates() -> (i32, i32) {
 }
 ```
 
+# Tableaux
+
+```rust
+let numbers = [1, 2, 3, 4, 5];
+let length = numbers.len();
+
+let numbers: [i32; 5] = [0; 5];
+```
+
 ```rust
 ```
 ```rust
