@@ -252,6 +252,11 @@ fn process_array(arr: &[i32]) {}
 // Acces a un element du tableau
 let numbers = [10, 20, 30, 40, 50];
 let element = numbers[2];
+
+// Lorsqu'un tableau est une référence, vous pouvez le rendre mutable en utilisant &mut. Cela vous permet de modifier les données d'origine via la référence.
+fn process_array(arr: &mut [i32]) {
+	arr[0] = 3;
+}
 ```
 
 ```rust
