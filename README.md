@@ -240,6 +240,12 @@ let numbers: [i32; 5] = [0; 5];
 
 let numbers = [1, 2, 3, 4, 5];
 process_array(&numbers);
+
+// Tableaux de taille fixe :
+fn process_array(arr: [i32; 5]) {}
+
+// Une référence est comme un pointeur vers des données au lieu des données elles-mêmes. L'utilisation de & crée une référence. Cela permet de passer un tableau de n'importe quelle taille.
+fn process_array(arr: &[i32]) {}
 ```
 
 ```rust
