@@ -3,6 +3,16 @@
 https://rustlings.rust-lang.org/
 https://github.com/rust-lang/rustlings
 
+# Compiler un fichier Rust
+
+```bash
+rustc hello.rs
+# rustc will produce a hello binary that can be executed.
+
+$ ./hello
+Hello World!
+```
+
 # Variable
 
 ```rust
