@@ -233,7 +233,9 @@ fn get_coordinates() -> (i32, i32) {
 # Tableaux
 
 ```rust
+// Declarer un tableau
 let numbers = [1, 2, 3, 4, 5];
+// Recuperer la taille d'un tableau
 let length = numbers.len();
 
 let numbers: [i32; 5] = [0; 5];
