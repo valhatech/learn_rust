@@ -246,6 +246,10 @@ fn process_array(arr: [i32; 5]) {}
 
 // Une référence est comme un pointeur vers des données au lieu des données elles-mêmes. L'utilisation de & crée une référence. Cela permet de passer un tableau de n'importe quelle taille.
 fn process_array(arr: &[i32]) {}
+
+// Acces a un element du tableau
+let numbers = [10, 20, 30, 40, 50];
+let element = numbers[2];
 ```
 
 ```rust
