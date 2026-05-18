@@ -91,6 +91,12 @@ println!("This is rounded: {:.2}", num);
 
     // You can use named arguments in the format specifier by appending a `$`.
     println!("{number:0>width$}", number=1, width=5);
+
+	let numbers = [1, 2, 3, 4, 5];
+	print!("{:?} ", numbers); // Sortie : [1, 2, 3, 4, 5]
+
+	let arr = [1.12345, 2.23456, 3.34567];
+	println!("{:.2?}", arr);// Sortie : [1.12, 2.23, 3.35]
 ```
 
 ### Entrée
