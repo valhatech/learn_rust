@@ -178,7 +178,6 @@ loop{
 }
 ```
 
-
 # while
 
 ```rust
@@ -201,6 +200,15 @@ for x in 1..101 {
 		println!("{} is divisible by 3", x);
 	}
 }
+
+// Intervalle inversé
+for i in (0..5).rev() { } // Valeurs : 4, 3, 2, 1, 0
+
+// Avancer de 2 en 2
+for i in (0..10).step_by(2) { } // Valeurs : 0, 2, 4, 6, 8
+
+// Combiner l'inversion et le pas
+for i in (0..10).rev().step_by(3) { } // Valeurs : 9, 6, 3, 0
 ```
 
 # Functions in Rust
