@@ -209,6 +209,15 @@ for i in (0..10).step_by(2) { } // Valeurs : 0, 2, 4, 6, 8
 
 // Combiner l'inversion et le pas
 for i in (0..10).rev().step_by(3) { } // Valeurs : 9, 6, 3, 0
+
+// Itérateur direct
+for num in numbers.iter() {} // Valeurs : 1, 2, 3, 4, 5
+
+// Index & Valeur :
+for (index, value) in numbers.iter().enumerate() { } // Valeurs : (0,1), (1,2), (2,3), (3,4), (4,5)
+
+for chunk in numbers.chunks(2) { }
+// Valeurs : [1,2], [3,4], [5]
 ```
 
 # Functions in Rust
