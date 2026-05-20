@@ -55,6 +55,18 @@ let string3 = "hello".to_owned();
 // Afficher une valeur flottante avec deux décimales : This is rounded: 1.56
 println!("This is rounded: {:.2}", num);
 
+// Méthode 1 : Consulter les données (en utilisant &) :
+for number in &numbers {
+    sum += number;
+}
+println!("I can use it here: {:?}", numbers);
+
+// Méthode 2 : Prendre les données (sans &) :
+for number in numbers {
+    sum += number;
+}
+// println!("Can't use {:?} anymore!", numbers);
+// Cela provoquerait une erreur
 ```
 
 ## Entrée/Sortie
