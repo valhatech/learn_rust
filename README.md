@@ -69,6 +69,17 @@ for number in numbers {
 // Cela provoquerait une erreur
 ```
 
+## Chaines de caracteres
+
+len() : Retourne le nombre de caractères dans la chaîne.
+chars().nth(index) : Retourne le caractère à l'index spécifié (basé sur 0). Cette méthode retourne un Option<char> — un type Rust spécial qui représente soit une valeur Some (si l'index existe) ou None (s'il n'existe pas). Appeler .unwrap() dessus extrait directement la valeur du caractère.
+contains(substring): Vérifie si la chaîne contient la sous-chaîne spécifiée.
+starts_with(prefix): Vérifie si la chaîne commence par le préfixe spécifié.
+ends_with(suffix): Vérifie si la chaîne se termine par le suffixe spécifié.
+to_uppercase(): Convertit la chaîne en majuscules.
+to_lowercase(): Convertit la chaîne en minuscules.
+trim(): Supprime les espaces blancs au début et à la fin de la chaîne.
+
 ## Entrée/Sortie
 
 ### Sortie
