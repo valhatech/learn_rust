@@ -292,6 +292,23 @@ let element = numbers[2];
 fn process_array(arr: &mut [i32]) {
 	arr[0] = 3;
 }
+
+// Méthode 1 : Consulter les données (en utilisant &) :
+for number in &numbers {
+    sum += number;
+}
+println!("I can use it here: {:?}", numbers);
+
+// Méthode 2 : Prendre les données (sans &) :
+for number in numbers {
+    sum += number;
+}
+// println!("Can't use {:?} anymore!", numbers);
+// Cela provoquerait une erreur
+
+// Pensez-y de cette façon :
+// 1 - Utiliser & c'est comme regarder un album photo : vous pouvez voir toutes les photos, mais l'album reste intact
+// 2 - Ne pas utiliser & c'est comme retirer les photos : vous pouvez les utiliser, mais l'album sera vide après
 ```
 
 ```rust
