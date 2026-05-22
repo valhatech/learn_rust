@@ -80,6 +80,12 @@ for number in numbers {
 	to_lowercase(): Convertit la chaîne en minuscules.
 	trim(): Supprime les espaces blancs au début et à la fin de la chaîne.
 
+	// Formattage de chaine de caractere
+	let name = "Bob";
+	let age = 25;
+	let formatted = format!("Name: {name}, Age: {age}");
+	println!("{}", formatted); // Sortie : Name: Bob, Age: 25
+
 ## Entrée/Sortie
 
 ### Sortie
