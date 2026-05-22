@@ -86,6 +86,13 @@ for number in numbers {
 	let formatted = format!("Name: {name}, Age: {age}");
 	println!("{}", formatted); // Sortie : Name: Bob, Age: 25
 
+	```rust
+	// Convertir un chiffre en string
+	let number = 42;
+	let number_str = number.to_string();
+	println!("The number as a string: {}", number_str);
+	```
+
 ## Entrée/Sortie
 
 ### Sortie
