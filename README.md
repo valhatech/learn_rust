@@ -335,7 +335,16 @@ for number in numbers {
 // 2 - Ne pas utiliser & c'est comme retirer les photos : vous pouvez les utiliser, mais l'album sera vide après
 ```
 
+# Match
+
 ```rust
+let number = 2;
+
+match number {
+    1 => println!("One"),
+    2 => println!("Two"),
+    _ => println!("Other"),
+}
 ```
 ```rust
 ```
