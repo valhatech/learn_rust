@@ -373,8 +373,14 @@ match temp {
         36.. => println!("Hot"),
     }
 ```
-```rust
+# Vecteur
 
+```rust
+// Tableau - taille fixe, connue au moment de la compilation
+let scores = [85, 92, 78, 90]; // toujours exactement 4 éléments
+
+// Vecteur - taille dynamique, peut changer pendant l'exécution
+let mut grades = Vec::new(); // commence vide, peut s'agrandir
 ```
 ```rust
 
