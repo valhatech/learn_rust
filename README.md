@@ -359,8 +359,19 @@ match temp {
 }
 ```
 
-```rust
+## Match avec valeur supérieur et inférieur
 
+```rust
+    let temp: i32 = input.trim().parse().expect("Please enter a valid number");
+
+    // Votre code ici en utilisant match avec des motifs de plages, aucun bras wildcard nécessaire
+    match temp {
+        ..=-1 => println!("Freezing"),
+        0..=15 => println!("Cold"),
+        16..=25 => println!("Mild"),
+        26..=35 => println!("Warm"),
+        36.. => println!("Hot"),
+    }
 ```
 ```rust
 
