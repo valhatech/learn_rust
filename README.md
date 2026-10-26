@@ -337,6 +337,7 @@ for number in numbers {
 
 # Match
 
+## Match basic
 ```rust
 let number = 2;
 
@@ -345,6 +346,31 @@ match number {
     2 => println!("Two"),
     _ => println!("Other"),
 }
+```
+## Match filtrage d'intervalles
+
+```rust
+let temp = 22;
+
+match temp {
+    ..=0 => println!("Freezing"),
+    1..=15 => println!("Cold"),
+    _ => println!("Warm"),
+}
+```
+
+```rust
+
+```
+```rust
+
+```
+```rust
+
+```
+```rust
+```
+```rust
 ```
 ```rust
 ```
