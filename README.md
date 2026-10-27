@@ -383,7 +383,34 @@ let scores = [85, 92, 78, 90]; // toujours exactement 4 éléments
 let mut grades = Vec::new(); // commence vide, peut s'agrandir
 ```
 ```rust
+let mut numbers: Vec<i32> = Vec::new();
+//Rust peut déterminer automatiquement le type à partir des valeurs que vous fournissez
+let numbers = vec![1, 2, 3, 4, 5];
 
+//Répétitions
+let zeros = vec![0; 5];   // [0, 0, 0, 0, 0]
+let tens = vec![10; 3];   // [10, 10, 10]
+let n = 4;
+let data = vec![10; n];   // [10, 10, 10, 10]
+
+let mut numbers = Vec::new();
+numbers.push(10);
+
+let mut fruits = Vec::new();
+fruits.push("apple");
+
+fn get_element_at(numbers: Vec<i32>, idx: i32) -> i32 {
+    match numbers.get(idx as usize) {
+        Some(&value) => value,
+        None => -1,
+    }
+}
+
+//Itérer sur un vecteur
+let names = vec!["Alice", "Bob", "Charlie"];
+for name in &names {
+    println!("Hello, {}!", name);
+}
 ```
 ```rust
 ```
