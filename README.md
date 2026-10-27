@@ -411,6 +411,17 @@ let names = vec!["Alice", "Bob", "Charlie"];
 for name in &names {
     println!("Hello, {}!", name);
 }
+
+//Itération mutable
+let mut numbers = vec![1, 2, 3, 4];
+for number in &mut numbers {
+    *number = *number * 2;
+}
+
+//Supprimer des éléments
+let mut numbers = vec![10, 20, 30, 40];
+let last = numbers.pop(); // supprime 40, renvoie Some(40)
+let removed = numbers.remove(1); // supprime "20"
 ```
 ```rust
 ```
