@@ -422,6 +422,17 @@ for number in &mut numbers {
 let mut numbers = vec![10, 20, 30, 40];
 let last = numbers.pop(); // supprime 40, renvoie Some(40)
 let removed = numbers.remove(1); // supprime "20"
+
+// COnvertir une chaine de caractère "10,20,30,40,50" en vecteur
+let mut numbers: Vec<i32> = numbers_input
+        .trim()
+        .split(',')
+        .map(|s| s.trim().parse().unwrap())
+        .collect();
+    
+    let index: usize = index_input.trim().parse().unwrap();
+    
+    numbers.remove(index);
 ```
 ```rust
 ```
