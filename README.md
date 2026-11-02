@@ -434,7 +434,14 @@ let mut numbers: Vec<i32> = numbers_input
     
     numbers.remove(index);
 ```
+# Structure
+
 ```rust
+struct Person {
+    name: String,
+    age: u32,
+    active: bool,
+}
 ```
 ```rust
 ```
