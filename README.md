@@ -449,6 +449,34 @@ struct Product {
         stock: 7,
     };
 ```
+## Focntion et structure
+
+```rust
+// Passer une structure en parametre
+fn calculate_area(rect: Rectangle) -> i32 {
+    rect.width * rect.height
+}
+
+// Retourner une structure
+fn create_square(size: i32) -> Rectangle {
+    Rectangle {
+        width: size,
+        height: size,
+    }
+}
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
 ```rust
 ```
 ```rust
