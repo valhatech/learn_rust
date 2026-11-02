@@ -437,11 +437,17 @@ let mut numbers: Vec<i32> = numbers_input
 # Structure
 
 ```rust
-struct Person {
+struct Product {
     name: String,
-    age: u32,
-    active: bool,
+    price: f64,
+    stock: i32,
 }
+
+    let product = Product {
+        name: String::from("Laptop"),
+        price: 99.99,
+        stock: 7,
+    };
 ```
 ```rust
 ```
