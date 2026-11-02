@@ -465,11 +465,36 @@ fn create_square(size: i32) -> Rectangle {
     }
 }
 ```
+## Structure tuple
+
 ```rust
+struct Color(i32, i32, i32);
+let red = Color(255, 0, 0);
+```
+
+# Hashmap
+
+```rust
+// Déclater une hashmap
+use std::collections::HashMap;
+let mut scores = HashMap::new();
+let mut scores: HashMap<String, i32> = HashMap::new();
+
+// Insérer des élements dans une hashmap
+let mut capitals = HashMap::new();
+capitals.insert("France", "Paris");
+capitals.insert("Japan", "Tokyo");
+
+// Accéder aux valeurs
+let town = capitals.get("Japan");
 ```
 ```rust
-```
-```rust
+let mut maap: HashMap<String, String> = HashMap::new();
+maap.insert(country, capital);
+match maap.get(&lookup_country){
+   Some(cap)=> println!("The capital of {} is {}",lookup_country,cap),
+   None => println!("{} not found in the map", lookup_country),
+}
 ```
 ```rust
 ```
