@@ -500,6 +500,10 @@ match maap.get(&lookup_country){
 for (key, value) in &students {
 	println!("{}: {}", key, value);
 }
+
+//'insère la nouvelle valeur que si l'entrée est vacante (la clé n'existe pas).
+// Ceci n'écrasera PAS le score d'Alice
+scores.entry("Alice").or_insert(90);
 ```
 ```rust
 ```
