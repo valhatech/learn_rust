@@ -506,6 +506,13 @@ for (key, value) in &students {
 scores.entry("Alice").or_insert(90);
 ```
 ```rust
+// Suppression d'un element
+let removed_value = inventory.remove(&item_to_remove);
+
+match removed_value {
+	Some(count) => println!("Removed {} {}",count,item_to_remove),
+	None => println!("{} not found",item_to_remove),
+}
 ```
 ```rust
 ```
