@@ -497,6 +497,9 @@ match maap.get(&lookup_country){
 }
 ```
 ```rust
+for (key, value) in &students {
+	println!("{}: {}", key, value);
+}
 ```
 ```rust
 ```
