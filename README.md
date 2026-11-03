@@ -532,6 +532,37 @@ match removed_value {
     }
 ```
 ```rust
+    let my_number = if number > 0 {
+        Some(number)
+    } else {
+        None
+    };
+
+    if my_number.is_some(){
+        println!("Positive number detected");
+    }
+
+    if my_number.is_none(){
+        println!("No positive number");
+    }
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
 ```
 ```rust
 ```
