@@ -514,7 +514,22 @@ match removed_value {
 	None => println!("{} not found",item_to_remove),
 }
 ```
+# Option
+
 ```rust
+    let name = input.trim();
+    
+    let student_name = if name.is_empty() {
+        None
+    } else {
+        Some(name.to_string())
+    };
+
+    // TODO: Créer une Option<String> selon que le nom est vide ou non
+    match student_name {
+        Some(name) => println!("Welcome, {}!",name),
+        None => println!("No name provided"),
+    }
 ```
 ```rust
 ```
