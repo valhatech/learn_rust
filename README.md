@@ -558,7 +558,16 @@ let maybe_score = Some(95);
 let score = maybe_score.expect("Score should always be present");
 println!("Your score is: {}", score);
 ```
+unwrap_or
+
 ```rust
+let maybe_score = Some(85);
+let score = maybe_score.unwrap_or(0);
+println!("Score: {}", score); // Affiche : Score : 85
+
+let no_score: Option = None;
+let default_score = no_score.unwrap_or(0);
+println!("Score: {}", default_score); // Affiche : Score : 0
 ```
 ```rust
 ```
