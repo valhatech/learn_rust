@@ -569,7 +569,24 @@ let no_score: Option = None;
 let default_score = no_score.unwrap_or(0);
 println!("Score: {}", default_score); // Affiche : Score : 0
 ```
+# Result
+
 ```rust
+fn divide(arg_1: f64, arg_2: f64) -> Result<f64, &'static str> {
+    
+    if arg_2 == 0.0 {
+        return Err("Division by zero");
+    }else{
+        return Ok(arg_1/arg_2);
+    }
+}
+
+let result = divide(dividend, divisor);
+
+match result {
+	Ok(value) => println!("Result: {}",value),
+	Err(error) => println!("Error: {}",error),
+}
 ```
 ```rust
 ```
