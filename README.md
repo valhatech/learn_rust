@@ -554,6 +554,9 @@ let actual_number = maybe_number.unwrap();
 println!("The number is: {}", actual_number);
 ```
 ```rust
+let maybe_score = Some(95);
+let score = maybe_score.expect("Score should always be present");
+println!("Your score is: {}", score);
 ```
 ```rust
 ```
