@@ -589,6 +589,16 @@ match result {
 }
 ```
 ```rust
+let success: Result = Ok(42);
+let failure: Result = Err("Something went wrong");
+
+if success.is_ok() {
+    println!("Operation succeeded!");
+}
+
+if failure.is_err() {
+    println!("Operation failed!");
+}
 ```
 ```rust
 ```
