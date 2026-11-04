@@ -546,7 +546,12 @@ match removed_value {
         println!("No positive number");
     }
 ```
+Deballer une option
+
 ```rust
+let maybe_number = Some(42);
+let actual_number = maybe_number.unwrap();
+println!("The number is: {}", actual_number);
 ```
 ```rust
 ```
