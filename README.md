@@ -600,8 +600,16 @@ if failure.is_err() {
     println!("Operation failed!");
 }
 ```
+L’opérateur ? offre un moyen clair de propager les erreurs sans écrire d’instructions match verbeuses. Lorsque tu places ? après un Result, il décompacte automatiquement une valeur Ok ou retourne immédiatement depuis la fonction actuelle avec l’Err :
+
 ```rust
+fn parse_and_double(s: &str) -> Result<i32, std::num::ParseIntError> {
+    let number = s.parse::<i32>()?; // Si l'analyse échoue, renvoyer l'erreur
+    Ok(number * 2) // Si réussi, doubler le nombre
+}
 ```
+L’opérateur ? peut uniquement être utilisé dans des fonctions qui renvoient un Result (ou Option), puisqu’il doit pouvoir renvoyer une erreur.
+
 ```rust
 ```
 ```rust
