@@ -612,7 +612,12 @@ L’opérateur ? peut uniquement être utilisé dans des fonctions qui renvoient
 
 ```rust
 ```
+
+# Closure
+
 ```rust
+let add = |x, y| x + y;
+let result = add(5, 3); // le résultat est 8
 ```
 ```rust
 ```
