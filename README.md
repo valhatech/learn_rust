@@ -620,6 +620,31 @@ let add = |x, y| x + y;
 let result = add(5, 3); // le résultat est 8
 ```
 ```rust
+let my_closure = || {
+    println!("Hello from the closure!");
+};
+my_closure(); // Cela appelle la closure et affiche le message
 ```
 ```rust
 ```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
+```
+```rust
