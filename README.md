@@ -625,7 +625,29 @@ let my_closure = || {
 };
 my_closure(); // Cela appelle la closure et affiche le message
 ```
+# Structure
+
 ```rust
+// Déclaration
+struct Dog {
+    name: String,
+    age: u8,
+}
+
+impl Dog {
+    fn bark(&self) {
+        println!("{} says woof!", self.name);
+    }
+}
+// [...]
+fn main() {
+    let my_dog = Dog {
+        name: String::from("Rex"),
+        age: 3,
+    };
+    
+    my_dog.bark(); // Sortie : Rex dit woof !
+}
 ```
 ```rust
 ```
